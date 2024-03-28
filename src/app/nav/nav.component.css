@@ -1,0 +1,23 @@
+.nav {
+    background-color: blue;
+    width: 100vw;
+    padding: 10px;
+}
+
+.nav>ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+li {
+    font-size: large;
+    margin-left: 45px;
+    color: bisque;
+}
+
+li:hover {
+    padding: 10px;
+   background-color: black;
+   cursor: pointer;
+}
