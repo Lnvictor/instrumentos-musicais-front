@@ -88,6 +88,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/instrumentos-musicais-front",
+            "netlifyToken": "nfp_EU4BDb7iczchabHkqaRyU5brVdBPGLkL91e2",
+            "siteId": "d75d16ed-caed-4295-9671-7364179b5d6c"
+          }
         }
       }
     }
