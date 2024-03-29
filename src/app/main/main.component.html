@@ -1,10 +1,17 @@
-<h2>Recomendados</h2>
-
-<div class="main-section-container">
-    <div class="grid-item" *ngFor="let item of items">
-        <inst-item [typx]='item'>
-        
-        </inst-item>        
-    </div>
+<div>
+    <inst-nav>
+    </inst-nav>
 </div>
+
+<h2>Ola, {{ name }}, Seus Recomendados</h2>
+
+<div class="container">
+    <div class="main-section-container">
+        <div class="grid-item" *ngFor="let item of items">
+            <inst-item [typx]='item'>
+            
+            </inst-item>
+        </div>
+    </div>
+  </div>
 

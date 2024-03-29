@@ -10,7 +10,13 @@ export class AuthService {
 
   checkAuthentication(){
     if (!localStorage.getItem("token")){
-      //redirect
+      window.location.href = '/login'    
     }
+  }
+
+  authenticate(user: string, pwd: string){
+    localStorage.setItem("username", user);
+    localStorage.setItem("token", "token");
+    window.location.href = '/';
   }
 }
