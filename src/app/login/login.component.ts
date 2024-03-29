@@ -9,9 +9,7 @@ export class LoginComponent{
 
   constructor(private authService: AuthService){}
 
-  loginSubmit(): void{
-    let user: string = document.getElementById("user")!.nodeValue!;
-    let pwd: string = document.getElementById("pwd")!.nodeValue!;
+  loginSubmit(user: string, pwd: string): void{
     this.authService.authenticate(user, pwd);
   }
 }

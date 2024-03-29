@@ -11,13 +11,13 @@
  
        <div class="inputBox"> 
  
-        <input type="text" id="user" required> <i>Username</i> 
+        <input type="text" id="user" required #user > <i>Username</i> 
  
        </div> 
  
        <div class="inputBox"> 
  
-        <input type="password" id="pwd" required> <i>Password</i> 
+        <input type="password" id="pwd" required #pwd > <i>Password</i> 
  
        </div> 
  
@@ -28,7 +28,7 @@
        <div class="inputBox"> 
  
 
-        <button type="submit" (click)='loginSubmit()'>Login </button>
+        <button type="submit" (click)='loginSubmit(user.value, pwd.value)'>Login </button>
  
        </div> 
  
